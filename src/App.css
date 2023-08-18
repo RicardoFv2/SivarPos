@@ -1,0 +1,102 @@
+.icon{
+  width: 28px;
+}
+.flex-row{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:8px;
+}
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 40px 1px 40px;
+  background-color: #333;
+  color: white;
+}
+
+.navbarr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 0;
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  z-index: 10000;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  z-index: 10;
+  padding: 16px;
+}
+
+.menu li a:hover {
+  background: #369cb8;
+}
+
+.centro{
+  display: grid;
+  place-content: center;
+}
+form{
+  background: #fff;
+  width: 285px;
+  padding: 34px;
+  color: #282c34;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+input,textarea{
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  margin-bottom: 14px;
+  border-radius: 7px;
+}
+input:focus,textarea:focus{
+    color: #333;
+    border: 3px solid #44c4e7;
+  }
+
+.boton{
+    cursor: pointer;
+    background: #44c4e7;
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 19px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.boton:hover {
+      background: #369cb8;
+}
+
