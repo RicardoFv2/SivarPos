@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Web3 from "web3";
 import Menu from "./components/menu";
 import Index from "./components/routes/index.jsx";
+import './index.css';
 
 const router = createBrowserRouter([
   {
@@ -41,8 +42,6 @@ function App() {
         console.log(balanceEth);
 
         setBalance(balanceEth);
-
-        
       } catch (error) {
         console.error(error);
       }
@@ -67,10 +66,12 @@ function App() {
     <div>
       {Metamask ? (
         <>
-          <RouterProvider router={router} />
-          conectarWallet={conectarWallet}
-          direccion={account}
-          saldo={balance}
+          <RouterProvider
+            router={router}
+            conectarWallet={conectarWallet}
+            direccion={account}
+            saldo={balance}
+          />
         </>
       ) : (
         <div>Instala metamask</div>

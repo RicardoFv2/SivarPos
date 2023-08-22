@@ -10,12 +10,20 @@ const Index = () => {
             <div id="content">
                 <div class="container" >
 
-                    <div class="box P texto centro">PRODUCTOS</div>
-                    <div class="box P texto centro">VENTAS</div>
-                    <div class="box P texto centro">CAJA</div>
-                    <div class="box P texto centro">RECIBOS</div>
-                    <div class="box P texto centro">PANEL DE CONTROL</div>
-                    <div class="box P texto centro">CERRAR SESION</div>
+                    <div class="box P texto centro">
+                        <h1>REGISTRARSE</h1>
+                        <div className="">
+                            <form action="">
+                                <label htmlFor=""> 
+                                    <input type="email" name="" id="" placeholder="Usuario" className="" />
+                                </label>
+                                <label htmlFor=""> 
+                                    <input type="password" name="" id="" placeholder="Contraseña" />
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                    
 
                 </div>
 
