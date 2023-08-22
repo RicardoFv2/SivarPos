@@ -1,8 +1,19 @@
 import "./App.css";
-import Menu from "./components/menu";
-import Formulario from "./components/formulario";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Web3 from "web3";
+import Menu from "./components/menu";
+import Index from "./components/routes/index.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Index />,
+  },
+  {
+    path: "/",
+  },
+]);
 
 function App() {
   const [Metamask, setMetamask] = useState(false);
@@ -30,6 +41,8 @@ function App() {
         console.log(balanceEth);
 
         setBalance(balanceEth);
+
+        
       } catch (error) {
         console.error(error);
       }
@@ -54,16 +67,10 @@ function App() {
     <div>
       {Metamask ? (
         <>
-          <Menu
-            conectarWallet={conectarWallet}
-            direccion={account}
-            saldo={balance}
-          ></Menu>
-
-          <div className="centro">
-            <h2>Formulario</h2>
-            <Formulario></Formulario>
-          </div>
+          <RouterProvider router={router} />
+          conectarWallet={conectarWallet}
+          direccion={account}
+          saldo={balance}
         </>
       ) : (
         <div>Instala metamask</div>
