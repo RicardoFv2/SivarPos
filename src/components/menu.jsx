@@ -1,5 +1,5 @@
-import icoeth from './etereo.png';
-import icomm from './metamask.png';
+import icoeth from './img/etereo.png';
+import icomm from './img/metamask.png';
 const Menu = (props) => {
     return (
         <div>
